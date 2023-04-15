@@ -1,0 +1,31 @@
+{
+  "name": "nodebb-plugin-storj-upload",
+  "version": "1.0.0",
+  "description": "Plugin for NodeBB v3.x.x to upload files to Storj.",
+  "main": "index.js",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ferumdev/nodebb-plugin-storj-upload"
+  },
+  "keywords": [
+    "nodebb",
+    "s3",
+    "storj",
+    "plugin",
+    "uploads"
+  ],
+  "author": "Open Source",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ferumdev/nodebb-plugin-storj-upload/issues"
+  },
+  "nbbpm": {
+    "compatibility": "^3.0.0"
+  },
+"dependencies": {
+    "aws-sdk": "^2.1300.0",
+    "gm": "^1.x",
+    "uuid": "*"
+   }
+}

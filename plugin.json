@@ -1,0 +1,37 @@
+{
+    "id": "nodebb-plugin-storj-upload",
+    "name": "S3 File Upload Plugin",
+    "description": "Plugin for NodeBB v3.x.x to upload files to Storj.",
+    "url": "https://github.com/ferumdev/nodebb-plugin-storj-upload",
+    "library": "./index.js",
+    "staticDirs": {},
+    "hooks": [
+        {
+            "hook": "static:app.load",
+            "method": "load"
+        },
+        {
+            "hook": "action:plugin.activate",
+            "method": "activate"
+        },
+        {
+            "hook": "action:plugin.deactivate",
+            "method": "deactivate"
+        },
+        {
+            "hook": "filter:admin.header.build",
+            "method": "admin.menu"
+        },
+        {
+            "hook": "filter:uploadImage",
+            "method": "uploadImage",
+            "priority": 6
+        },
+        {
+            "hook": "filter:uploadFile",
+            "method": "uploadFile",
+            "priority": 6
+        }
+    ],
+    "templates": "./templates"
+}
